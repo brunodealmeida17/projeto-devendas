@@ -12,7 +12,7 @@ type SeriesData = {
 
 type ChartData = {
     labels: {
-        categories: string[];        
+        categories: string[];
     };
     series: SeriesData[];
 }
@@ -25,7 +25,7 @@ const BarChart = () => {
         series: [
             {
                 name: "",
-                data: []                   
+                data: []
             }
         ]
     });
@@ -43,7 +43,7 @@ const BarChart = () => {
                     series: [
                         {
                             name: "% Sucesso",
-                            data: mySeries                   
+                            data: mySeries
                         }
                     ]
                 });
@@ -58,17 +58,16 @@ const BarChart = () => {
             }
         },
     };
-    
-   
+
     return (
-        <Chart 
-            options={{...options, xaxis: chartData.labels}}
+        <Chart
+            options={{ ...options, xaxis: chartData.labels }}
             series={chartData.series}
             type="bar"
             height="240"
 
         />
-       
+
 
     );
 }
