@@ -4,6 +4,8 @@ import DonutChart from "components/DonutChart";
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
 
+
+
 const Dashboard = () => {
     return (
         <>
@@ -25,7 +27,7 @@ const Dashboard = () => {
 
                 <div className="py-3">
                     <h2 className="text-primary"> Todas as Vendas</h2>
-
+                    
                 </div>
 
                 <DataTable />
