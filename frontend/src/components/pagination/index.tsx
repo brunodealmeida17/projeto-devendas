@@ -8,6 +8,7 @@ type Props = {
 }
 
 const Pagination = ( { page, onPageChange} : Props) => {
+
     return (
         <div className="row d-flex text-align-content-center">
             <nav>
@@ -25,7 +26,7 @@ const Pagination = ( { page, onPageChange} : Props) => {
             </nav>
         </div>
 
-    )
+    );
 
 }
 export  default Pagination;
